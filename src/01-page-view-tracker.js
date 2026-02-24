@@ -14,9 +14,11 @@
 // counter.increment();
 // console.log(counter.getCount()); // 2
 
-// counter.count = 100; // should NOT affect internal count
+// Edges
+// 1. count cannot be negative
+// 2. count cannot be manually set! (counter.count)
 
-function createCounter() {
+export function createCounter() {
     //Your code here
     
 }
