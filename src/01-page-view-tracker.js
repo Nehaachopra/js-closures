@@ -20,5 +20,5 @@
 
 export function createCounter() {
     //Your code here
-    
+    let counter
 }
