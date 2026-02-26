@@ -18,7 +18,23 @@
 // 1. count cannot be negative
 // 2. count cannot be manually set! (counter.count)
 
-export function createCounter() {
+function createCounter() {
     //Your code here
-    let counter
+    let counter = 0;
+    return {
+        increment: () => {
+            counter++;
+        },
+        decrement: () => {
+            counter === 0 ? counter = 0 : counter--; 
+        },
+        getCount: () => counter
+    }
 }
+module.exports = { createCounter }
+
+// const counter = createCounter();
+// const counter1 = createCounter();
+// counter.decrement();
+// counter.increment();
+// console.log(counter1.getCount())

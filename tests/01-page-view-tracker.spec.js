@@ -1,4 +1,4 @@
-import { createCounter } from "../src/01-page-view-tracker";
+const { createCounter } = require("../src/01-page-view-tracker");
 
 describe("createCounter", () => {
     test("initial count is 0", () => {
@@ -42,6 +42,6 @@ describe("createCounter", () => {
         counter1.increment();
         
         expect(counter1.getCount()).toBe(2);
-        expect(counter1.getCount()).toBe(1);
+        expect(counter2.getCount()).toBe(1);
     })
 })
